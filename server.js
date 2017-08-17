@@ -9,6 +9,6 @@ console.log('================');
 console.log(process.env);
 
 
-app.listen(7990, ()=>{
-  console.log('listening on port 7990');
+app.listen(process.env.PORT, ()=>{
+  console.log(`listening on port ${process.env.PORT}`);
 });
